@@ -5,7 +5,7 @@ var ListItem = require('./ListItem.jsx');
 // have to put file extension because .jsx not .js which is what it automatically looks for
 
 // test data - real data would live somewhere else
-var ingredients = [{'id':1, 'text':'ham'}, {'id':2, 'text':'cheese'}, {'id':3, 'text':'potatoes'}];
+// var ingredients = [{'id':1, 'text':'ham'}, {'id':2, 'text':'cheese'}, {'id':3, 'text':'potatoes'}];
 
 var List = React.createClass({
   render: function() {
