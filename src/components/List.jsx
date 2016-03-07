@@ -15,14 +15,6 @@ var List = React.createClass({
   componentWillMount: function() {
     // use to make web requests, component ready to go and now can make web request to populate with data
     // all web requests done here 
-    HTTP.get('/ingredients')
-    .then(function(data) {
-      this.setState({ingredients: data}); 
-      // ingredients now equal to data coming from server
-      // referring to wrong this if say this.setState - needs to be bound using bind
-    }.bind(this));
-    // making sure function above is bound to component
-    // otherwise might refer to something in another file
   },
   render: function() {
     var listItems = this.state.ingredients.map(function(item) {
